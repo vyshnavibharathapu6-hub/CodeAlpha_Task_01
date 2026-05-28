@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Amazon Alpha - Authentication</title>
+    <style>
+        body { background-color: #eaeded; font-family: 'Segoe UI', sans-serif; }
+        .auth-card { border: 1px solid #ddd; border-radius: 8px; background: #fff; }
+        .form-control { border: 1px solid #a6a6a6; border-radius: 4px; padding: 10px; }
+        .form-control:focus { border-color: #e77600; box-shadow: 0 0 3px rgba(231, 118, 0, 0.5); }
+        .btn-amazon-primary { background: #ffd814; border: 1px solid #fcd200; color: #0f1111; border-radius: 8px; font-weight: 500; }
+        .btn-amazon-primary:hover { background: #f7ca00; }
+        .btn-amazon-secondary { background: #f0f2f2; border: 1px solid #d5d9d9; color: #0f1111; border-radius: 8px; font-weight: 500; }
+        .btn-amazon-secondary:hover { background: #e3e6e6; }
+    </style>
+</head>
+<body class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="p-4 shadow-sm auth-card" style="width: 380px;">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold m-0 text-dark"><span class="text-warning">amazon</span><span class="fs-4 text-secondary">alpha</span></h2>
+            <p class="text-muted small m-0">Full Stack Project Edition</p>
+        </div>
+        
+        <form action="/login" method="POST" class="mb-4 pb-4 border-bottom">
+            <h5 class="fw-normal mb-3">Sign in</h5>
+            <input type="text" name="username" placeholder="Username" class="form-control mb-2" required>
+            <input type="password" name="password" placeholder="Password" class="form-control mb-3" required>
+            <button type="submit" class="btn btn-amazon-primary w-100 py-2">Sign In</button>
+        </form>
+
+        <form action="/register" method="POST">
+            <h6 class="text-muted text-center mb-3 small">New to Amazon Alpha?</h6>
+            <input type="text" name="username" placeholder="Choose a Username" class="form-control mb-2" required>
+            <input type="password" name="password" placeholder="Create a Password" class="form-control mb-3" required>
+            <button type="submit" class="btn btn-amazon-secondary w-100 py-2">Create Account</button>
+        </form>
+    </div>
+</body>
+</html>
