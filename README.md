@@ -37,3 +37,9 @@ Follow these steps to run the project locally on your machine:
 ```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/CodeAlpha_Ecommerce_Store.git](https://github.com/YOUR_GITHUB_USERNAME/CodeAlpha_Ecommerce_Store.git)
 cd CodeAlpha_Ecommerce_Store
+
+2.Install Dependencies: Install the required npm packages by running npm install.
+
+3.Environment Configuration: Create a .env file in the root directory containing your environment variables (PORT=3000, MONGODB_URI=your_mongodb_connection_string, and SESSION_SECRET=your_canvas_session_secret_key).
+
+4. Run the Application: Start the development server using npm start and open your browser to `
